@@ -1,0 +1,33 @@
+description: CatBoost Regressor
+exp_name: 'atmacup10'
+run_name: 'run000'
+fe_name: 'fe000'
+data:
+  sample_submission: '../input/atmacup10_dataset/atmacup10__sample_submisson.csv'
+cols_definition:
+  id_col: 'object_id'
+  target_col: 'likes'
+  categorical_col: [
+    'Type',
+    'Breed1',
+    'Breed2',
+    'Gender',
+    'Color1',
+    'Color2',
+    'Color3',
+    'State',
+    'RescuerID'
+  ]
+model_name: 'ModelCatRegressor'
+params: {
+  'depth': 6,
+  'learning_rate': 0.1,
+  'iterations': 10,
+  'loss_function': 'RMSE',
+  'eval_metric': 'RMSE',
+  'random_seed': 777,
+  'allow_writing_files': False,
+  'task_type': "CPU",
+  'early_stopping_rounds': 50
+}
+evaluation_metric: 'rmse'
