@@ -1,4 +1,4 @@
-#Ayniyを使用したコンペティションテンプレート
+ # Ayniyを使用したコンペティションテンプレート
 
 # Ayniy, All You Need is YAML
 
